@@ -1,54 +1,707 @@
-header{
+/* Top画面　開始 */
+header {
   width: 100%;
   height: 40px;
-  position: fixed;
-  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
   display: flex;
 }
 
-.title{
-  margin-left: 20px;
-  font-size: 30px;
-  color: rgb(14, 14, 134);
+.title {
+  width: 10%;
+  margin-left: 30px;
+  background-size: 50px 50px;
 }
 
-.navi-parent{
+.navi-parent {
   width: 100%;
 }
 
-.navi-child{
+.navi-child {
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   justify-content: flex-end;
-  color: rgb(14, 14, 134);
+  color: rgb(120, 120, 122);
 }
 
-.navi-child li{
-  margin: 20px;
-  font-weight: bold;
+.navi-child li {
+  margin: 15px;
   display: inline-block;
 }
 
-.smile{
-  margin-top: 400px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  font-size: 60px;
-  line-height: 0px;
-  display: inline-block;
+.top-relative {
+  position: relative;
 }
 
-.box{
-  width: 70%;
-  height: 200px;
-  background-color:rgb(14, 14, 134);
-  margin-top: 0px;
-}
-
-.firstview-img{
-  width: 45%;
-  margin-top: -500px;
-  margin-left: 850px;
+.top-relative__img {
+  margin: 0 0 0 auto;
   display: block;
+  width: 50%;
 }
+
+.top-txt-parent {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+}
+.top-txt-child {
+  font-size: 70px;
+  color: rgb(192, 11, 156);
+  font-family: "Indie Flower", cursive;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.top-txt-child::after {
+  content: "growth";
+  font-size: 70px;
+  color: #089797;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.top-txt-child2 {
+  font-size: 70px;
+  color: rgb(192, 11, 156);
+  font-family: "Indie Flower", cursive;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.top-child3 {
+  font-size: 20px;
+  color: #089797;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.top-child3::before {
+  content: "全ての人の";
+  font-size: 20px;
+  color: rgb(192, 11, 156);
+  font-weight: bold;
+}
+
+.top-child3::after {
+  content: "にコミットする";
+  font-size: 20px;
+  color: rgb(192, 11, 156);
+  font-weight: bold;
+}
+
+.top-child4 {
+  font-size: 18px;
+  color: rgb(133, 131, 129);
+  margin-top: -30px;
+}
+
+.top-child5 {
+  font-size: 18px;
+  color: rgb(133, 131, 129);
+}
+/* Top画面　終了 */
+
+/* 新着情報画面　開始 */
+.top-news {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: rgb(134, 5, 108);
+  margin-top: 100px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.new-arrival {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(133, 131, 129);
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.line-top {
+  width: 800px;
+  border-top: solid 2px rgb(160, 159, 157);
+  margin-left: 400px;
+}
+
+.new-arrival-parent {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px rgb(160, 159, 157);
+  margin-left: 400px;
+}
+
+.date {
+  font-size: 15px;
+  color: rgb(124, 122, 122);
+  margin: 30px 0 30px 0;
+  padding: 5px 10px 5px 10px;
+}
+
+.news {
+  font-size: 13px;
+  color: white;
+  background-color: rgb(141, 5, 89);
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  margin: 30px 30px 30px 30px;
+  padding: 5px 13px 5px 13px;
+}
+
+.content {
+  font-size: 15px;
+  color: rgb(124, 122, 122);
+  margin: 30px 0 30px 0;
+  padding: 5px 10px 5px 10px;
+}
+
+.line-bottom {
+  width: 800px;
+  border-top: solid 2px rgb(160, 159, 157);
+  margin-left: 400px;
+  margin-bottom: 200px;
+}
+/* 新着情報画面　終了 */
+
+/* About画面　開始 */
+.about-box {
+  width: 100%;
+  height: 60%;
+  background-color: rgb(248, 241, 241);
+}
+
+.about {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: rgb(192, 11, 156);
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+
+.technology-coaching {
+  font-size: 25px;
+  color: rgb(94, 92, 92);
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-box2 {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.about-text1 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(92, 91, 91);
+  margin-top: -300px;
+  margin-left: 400px;
+  position: absolute;
+}
+
+.about-text2 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(92, 91, 91);
+  margin-top: -200px;
+  margin-left: 400px;
+  position: absolute;
+}
+
+.about-img {
+  width: 30%;
+  margin-left: 800px;
+  margin-top: 50px;
+}
+/* About画面　終了 */
+
+/* サービス内容画面　開始 */
+.service {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: rgb(192, 11, 156);
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+.service-content {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(94, 92, 92);
+  margin-top: 25px;
+  margin-left: 400px;
+  margin-bottom: 25px;
+}
+
+.grid {
+  width: 800px;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 3fr 3fr;
+  margin-left: 400px;
+  padding-bottom: 200px;
+}
+
+.grid-box1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: rgb(194, 41, 105);
+  color: white;
+}
+
+.grid-img {
+  width: 25%;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.grid-box1-education {
+  margin-left: 170px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.grid-box1-sample {
+  font-size: 12px;
+  margin-top: 30px;
+  margin-left: 70px;
+  line-height: 24px;
+}
+
+.grid-box2 {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: rgb(218, 95, 146);
+}
+
+.grid-img2 {
+  width: 25%;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.grid-box2-text-parent {
+  position: absolute;
+  margin-left: 120px;
+  margin-top: -90px;
+  color: white;
+}
+
+.grid-box2-education {
+  margin-bottom: 5px;
+}
+
+.grid-box2-sample {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.grid-box3 {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgb(184, 122, 163);
+}
+
+.grid-img3 {
+  width: 25%;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.grid-box3-text-parent {
+  position: absolute;
+  margin-left: 120px;
+  margin-top: -90px;
+  color: white;
+}
+
+.grid-box3-education {
+  margin-bottom: 5px;
+}
+
+.grid-box3-sample {
+  font-size: 12px;
+  line-height: 24px;
+}
+/* サービス内容画面　終了 */
+
+/* ブログ画面　開始 */
+.blog-box {
+  width: 100%;
+  background-color: rgb(248, 241, 241);
+  padding-bottom: 100px;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: rgb(192, 11, 156);
+  margin-left: 360px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.blog-title-katakana {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  margin-left: 360px;
+  margin-bottom: 20px;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-card {
+  width: 250px;
+  height: 300px;
+  margin: 0 15px 0 15px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.blog-card-title {
+  width: 60px;
+  height: 30px;
+  padding-top: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  background-color: rgb(175, 12, 143);
+  border-radius: 10px 0 0 0;
+  position: absolute;
+}
+
+.blog-card-img {
+  width: 100%;
+  top: -10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.blog-card-text {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(94, 92, 92);
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 24px;
+}
+
+.blog-card-date {
+  font-size: 13px;
+  color: rgb(94, 92, 92);
+  margin-top: 50px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.blog-card-coachtech {
+  font-size: 13px;
+  color: rgb(94, 92, 92);
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.brog-page-btn-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.brog-page-btn {
+  width: 200px;
+  height: 30px;
+  padding-top: 15px;
+  font-size: 18px;
+  margin-top: 50px;
+  text-align: center;
+  color: #64054c;
+  background-color: white;
+  border: solid 2px #64054c;
+  border-radius: 30px;
+}
+/* ブログ画面　終了 */
+
+/* 会社概要画面　開始 */
+.company-top {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: rgb(192, 11, 156);
+  margin-left: 400px;
+  padding: 50px 0 30px 0;
+}
+
+.company-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  margin-left: 400px;
+}
+
+.company-table {
+  margin-top: 30px;
+  margin-left: 400px;
+  margin-bottom: 100px;
+}
+
+.company-name-child1 {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 20px;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+  background-color: rgb(250, 245, 244);
+}
+
+.company-name-child2 {
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+}
+
+.company-name-ceo1 {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 20px;
+  color: rgb(148, 148, 145);
+  border-collapse: collapse;
+  background-color: rgb(250, 245, 244);
+  border: solid 1px rgb(141, 146, 146);
+}
+
+.company-name-ceo2 {
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+}
+
+.company-address1 {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 20px;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+  background-color: rgb(250, 245, 244);
+}
+
+.company-address2 {
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+}
+
+.company-worker1 {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 20px;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+  background-color: rgb(250, 245, 244);
+}
+
+.company-worker2 {
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+}
+
+.company-tel1 {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 20px;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+  background-color: rgb(250, 245, 244);
+}
+
+.company-tel2 {
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+}
+
+.company-capital1 {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 20px;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+  background-color: rgb(250, 245, 244);
+}
+
+.company-capital2 {
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(148, 148, 145);
+  border: solid 1px rgb(141, 146, 146);
+}
+
+.flex-company-box {
+  display: flex;
+  justify-content: center;
+}
+
+.recruit-parent {
+  width: 900px;
+  height: 400px;
+  position: relative;
+}
+
+.recruit-txt {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-left: 300px;
+}
+
+.recruit-img {
+  width: 100%;
+}
+
+.interview-parent {
+  width: 900px;
+  height: 400px;
+  position: relative;
+}
+
+.interview-txt {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-left: 300px;
+}
+
+.interview-img {
+  width: 100%;
+}
+
+.contact-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-txt {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: rgba(42, 42, 43, 0.548);
+}
+
+.line-height-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.line-height {
+  width: 2px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(160, 15, 136);
+}
+
+.contact-btn-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btn {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  padding-top: 35px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #f03482, #860671);
+  box-shadow: 0px 7px 3px rgb(75, 4, 72);
+}
+
+.contact-btn::before {
+  position: absolute;
+  content: "";
+  background: url(../img/mailicon.svg);
+  width: 30px;
+  height: 30px;
+  margin-left: -50px;
+  margin-top: -8px;
+}
+
+.copyright-parent {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(248, 241, 241);
+  height: 50px;
+  margin-top: 100px;
+}
+
+.copyright {
+  font-size: 15px;
+  padding-top: 20px;
+  color: rgb(120, 122, 122);
+}
+/* 会社概要画面　終了 */
